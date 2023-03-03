@@ -28,7 +28,7 @@ export default {
     },
     completeProject(id){
       let findProject = this.projects.find(project =>{
-        return project.id = id;
+        return project.id === id;
       }); // {}
       findProject.complete = !findProject.complete
     }
